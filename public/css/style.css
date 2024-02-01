@@ -1,0 +1,397 @@
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica Neue 55", sans-serif;
+}
+
+p{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.btn-success {
+  background-color: #5CB85F;
+  border-radius: 2px;
+  border: none;
+}
+
+.btn-pilih-mobil {
+  background-color: #5CB85F;
+  border-radius: 2px;
+  color: #fff;
+  width: 100%;
+}
+
+.cars-list {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #f1f3ff;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000 !important;
+}
+
+.navbar-custom {
+  width: 50%;
+}
+
+/* Navbar End */
+
+/* Hero */
+.hero {
+  background-color: #f1f3ff;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-img {
+  position:relative;
+  margin-top: 86px;
+  width: 612px;
+
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 32px;
+}
+
+.hero p {
+  padding-right: 100px;
+  margin-top: 16px;
+}
+
+
+
+/* Service */
+.service {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 24px;
+}
+
+.service-best {
+  margin-top: 24px;
+}
+
+.service-menu {
+  display: flex;
+  flex-description: column
+}
+
+.service h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.service-menu p {
+  margin-left: 14px;
+  margin-top: 2px;
+}
+
+/* why us */
+.why-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.why {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.img-why {
+  height: 32px;
+  width: 32px;
+}
+
+.card-body h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card-body p {
+  margin-bottom: 0;
+}
+
+/* Testimonial */
+.row-testi{
+ margin-right: 0;
+ margin-left: 0;
+}
+
+.col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.testi-header h1{
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.card-testi {
+  height: 100%;
+  padding: 26px;
+  background-color: #F1F3FF; 
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px 0px #00000026;
+ 
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testi-content{
+  margin-left: 26px;
+}
+
+.testi-content img{
+  margin-bottom: 8px;
+}
+
+.testi-content p{
+  margin-bottom: 0;
+}
+
+.name-testi {
+  margin-top: 8px;
+}
+
+.btn-testi{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.btn-left {
+  position: relative;
+  margin-right: 24px;
+  height: 32px;
+  width: 32px;
+  rounded: 50%;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: #5CB85F;
+  border: 1px solid #C4C4C4;
+}
+
+.btn-right {
+  position: relative;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #5CB85F;
+  border: 1px solid #C4C4C4;
+}
+
+.carousel-control-prev-icon{
+  height: 15px;
+  width: 8px;
+  color: #000;
+}
+
+.carousel-control-next-icon{
+  height: 15px;
+  width: 8px;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background-color: #0D28A6;
+  color: #fff;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-radius: 13px;
+  margin-top: 60px;
+}
+
+.cta-banner h1{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* faq */
+.faq h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.card-accordion {
+  margin-bottom: 16px;
+  border: 1px solid #D4D4D4 !important;
+  border-radius: 4px !important;
+}
+
+.custom-accordion {
+  background-color: #fff !important;
+}
+
+.btn-custom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.footer-nav a p{
+  text-decoration: none;
+  font-weight: 400;
+  color: #000000;
+}
+
+.foooter-connect {
+  font-weight: light;
+}
+
+.copyright {
+  margin-top: 16px;
+}
+
+.cari-mobil {
+  display: flex;
+  margin-top: -50px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px #00000026;
+
+}
+
+.btn-cari-mobil {
+  margin-top: 32px;
+  background-color: #5CB85F;
+  border-radius: 2px;
+  border: none;
+}
+
+.select-mobil{
+  height: 37px;
+  text-decoration:none;
+  border-radius: 2px;
+  border-color:#D0D0D0;
+}
+
+.select-waktu{
+  height: 37px;
+  width: 200px;
+  border-radius: 2px;
+  text-decoration:none;
+  border-color: #D0D0D0;
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+  .navbar {
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+  }
+  .nav-link {
+    margin-right: 12px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #5cb85f;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .hero h1{
+    margin-top: 117px;
+  }
+
+  .service {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .service-title {
+    margin-left: 60px;
+  }
+
+  .service-best {
+    margin-top: 86px;
+  }
+
+  .why-header h1 {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  
+  .why-header p {
+    text-align: left;
+  }
+
+  .cta-banner {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .cta-banner p {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+
+  .faq {
+    margin-bottom: 100px;
+  }
+
+  .col-lg-7 {
+    margin-top: 60px;
+  }
+
+  .copyright {
+    margin-top: 0px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  .hero-img{
+    margin-top: 24px;
+    width: 100%;
+  }
+  .why-header{
+    margin-top: 60px;
+  }
+  .why-us {
+    margin-top: 24px;
+  }
+  .testi-header{
+    margin-top: 60px;
+  }
+  .hero p {
+    padding-right: 0;
+    margin-top: 16px;
+  }
+}
+

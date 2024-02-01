@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Font -->
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+      rel="stylesheet"
+    />
+
+    <!-- Link Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!-- link My Style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Cari Mobil</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container d-flex">
+        <div class="row hero-section">
+          <div class="col-lg-6">
+            <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+            <p>
+              Selamat datang di Binar Car Rental. Kami menyediakan mobil
+              kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+              kebutuhanmu untuk sewa mobil selama 24 jam.
+            </p>
+          </div>
+          <div class="col-lg-6 img-area">
+            <img src="./images/img_car.png" class="hero-img" alt="mercedes" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card cari-mobil">
+        <img class="card-img-top" src="holder.js/100px180/" alt="" />
+        <div class="card-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <label>Tipe Driver</label>
+                <select
+                  class="select-mobil"
+                  name="driver"
+                  id="driver"
+                  class="form-select"
+                >
+                  <option value="" disabled selected>Pilih Tipe Driver</option>
+                  <option value="dengansopir">Dengan Sopir</option>
+                  <option value="tanpasopir">Tanpa Sopir (Lepas kunci)</option>
+                </select>
+              </div>
+              <div class="col-lg-2">
+                <label>Tanggal</label>
+                <input type="date" id="date" name="date" class="form-control" />
+              </div>
+              <div class="col-lg-3">
+                <label>waktu Jemput /Ambil</label>
+                <select
+                  class="select-waktu"
+                  name="waktu"
+                  id="waktu"
+                  class="form-select"
+                >
+                  <option value="" disabled selected>Pilih Waktu</option>
+                  <option value="08.00">
+                    <div>
+                      <p>08.00<span>WIB</span></p>
+                    </div>
+                  </option>
+                  <option value="09.00">
+                    <div>
+                      <p>09.00<span>WIB</span></p>
+                    </div>
+                  </option>
+                  <option value="10.00">
+                    <div>
+                      <p>10.00<span>WIB</span></p>
+                    </div>
+                  </option>
+                  <option value="11.00">
+                    <div>
+                      <p>11.00<span>WIB</span></p>
+                    </div>
+                  </option>
+                  <option value="12.00">
+                    <div>
+                      <p>11.00<span>WIB</span></p>
+                    </div>
+                  </option>
+                </select>
+              </div>
+              <div class="col-lg-2">
+                <label>Jumlah Penumpang</label>
+                <input type="number" class="form-control" name="penumpang" id="penumpang"/>
+              </div>
+              <div class="col-lg-2">
+                <button class="btn btn-primary btn-cari-mobil" onclick="validateAndSearch()">
+                  Cari Mobil
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="col-lg-12 cars-list d-flex">
+        <div class="col-lg-4 pl-0">
+          <div class="card text-left">
+            <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <img src="./images/car1.png" alt="">
+            <div class="card-body">
+              <p class="">Nama/Tipemobil</p>
+              <h5 class="mt-2">Rp. 450.000 / Perhari</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <div class="d-flex mt-2">
+                <img src="./images/fi_users.png" alt="user">
+                <p class="pl-2">4 Orang</p>
+              </div>
+              <div class="d-flex mt-2">
+                <img src="./images/fi_settings.png" alt="user">
+                <p class="pl-2">Manual</p>
+              </div>
+              <div class="d-flex mt-2 mb-4">
+                <img src="./images/fi_calendar.png" alt="user">
+                <p class="pl-2">Tahun 2020</p>
+              </div>
+              <button class="btn btn-pilih-mobil">Pilih Mobil</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 pl-0 mx-2">
+          <div class="card text-left">
+            <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <img src="./images/car1.png" alt="">
+            <div class="card-body">
+              <p class="">Nama/Tipemobil</p>
+              <h5 class="mt-2">Rp. 450.000 / Perhari</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <div class="d-flex mt-2">
+                <img src="./images/fi_users.png" alt="user">
+                <p class="pl-2">4 Orang</p>
+              </div>
+              <div class="d-flex mt-2">
+                <img src="./images/fi_settings.png" alt="user">
+                <p class="pl-2">Manual</p>
+              </div>
+              <div class="d-flex mt-2 mb-4">
+                <img src="./images/fi_calendar.png" alt="user">
+                <p class="pl-2">Tahun 2020</p>
+              </div>
+              <button class="btn btn-pilih-mobil">Pilih Mobil</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 pl-0">
+          <div class="card text-left">
+            <img class="card-img-top" src="holder.js/100px180/" alt="">
+            <img src="./images/car1.png" alt="">
+            <div class="card-body">
+              <p class="">Nama/Tipemobil</p>
+              <h5 class="mt-2">Rp. 450.000 / Perhari</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <div class="d-flex mt-2">
+                <img src="./images/fi_users.png" alt="user">
+                <p class="pl-2">4 Orang</p>
+              </div>
+              <div class="d-flex mt-2">
+                <img src="./images/fi_settings.png" alt="user">
+                <p class="pl-2">Manual</p>
+              </div>
+              <div class="d-flex mt-2 mb-4">
+                <img src="./images/fi_calendar.png" alt="user">
+                <p class="pl-2">Tahun 2020</p>
+              </div>
+              <button class="btn btn-pilih-mobil">Pilih Mobil</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row footer">
+        <div class="col-lg-3 mr-5">
+          <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+          <p>binarcarrental@gmail.com</p>
+          <p>081-233-334-808</p>
+        </div>
+        <div class="col-lg-2 footer-nav">
+          <a href="#"><p>Our Sercive</p></a>
+          <a href="#"><p>Why Us</p></a>
+          <a href="#"><p>Testimonial</p></a>
+          <a href="#"><p>FAQ</p></a>
+        </div>
+        <div class="col-lg-3">
+          <p class="foooter-connect">Connect with us</p>
+          <div class="">
+            <img class="mr-2" src="./images/icon_facebook.png" alt="facebook" />
+            <img
+              class="mr-2"
+              src="./images/icon_instagram.png"
+              alt="instagram"
+            />
+            <img class="mr-2" src="./images/icon_twitter.png" alt="twitter" />
+            <img class="mr-2" src="./images/icon_mail.png" alt="email" />
+            <img class="mr-2" src="./images/icon_twitch.png" alt="twitch" />
+          </div>
+        </div>
+        <div class="col-lg-3 copyright">
+          <p>Copyright</p>
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+      </div>
+    </div>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/validateSearch.js"></script>
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+  </body>
+</html>
